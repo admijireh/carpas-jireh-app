@@ -3,12 +3,12 @@ import nodemailer from "nodemailer";
 import { inputData } from "./types";
 // Create email transporter
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT),
+  host: process.env.NEXT_PUBLIC_SMTP_HOST,
+  port: Number(process.env.NEXT_PUBLIC_SMTP_PORT),
   secure: true,
   auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASSWORD,
+    user: process.env.NEXT_PUBLIC_SMTP_USER,
+    pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD,
   },
 });
 
@@ -17,9 +17,11 @@ export async function POST(request: Request) {
     const formData: inputData = await request.json();
     const { nombre, email, tipoCarpa, telefono, dataConsent } = formData;
 
+    console.log("sendind emails");
+
     // Email to customer
     await transporter.sendMail({
-      from: process.env.SMTP_USER,
+      from: process.env.NEXT_PUBLIC_SMTP_USER,
       to: email,
       subject: "Confirmación de solicitud - Carpas Jireh",
       html: `
@@ -36,8 +38,8 @@ export async function POST(request: Request) {
 
     // Email to admin
     await transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: email,
+      from: process.env.NEXT_PUBLIC_SMTP_USER,
+      to: process.env.NEXT_PUBLIC_SMTP_USER,
       subject: "Nueva solicitud de carpa",
       html: `
         <h1>Nueva solicitud de cliente</h1>
