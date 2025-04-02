@@ -36,6 +36,12 @@
     
 }
 
+@media (max-width: 400px) {
+   .buttonCallAction {
+    flex-wrap: wrap;
+   } 
+}
+
 .openInfo:hover {
     transform: scale(1.2); 
     opacity: 0.8;
@@ -141,10 +147,9 @@
     align-items: center;
     gap: 1rem;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.backgroundButton {
-    color: aliceblue;
-}
+
 .contactInfo .wraperContactInfo h1 {
     font-size: 70px;
     width: 50%;
@@ -156,6 +161,32 @@
     color: aliceblue;
     
 }
+
+@media (max-width: 800px) {
+    .contactInfo .wraperContactInfo {
+      
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 400px) {
+ 
+
+    .contactInfo .wraperContactInfo h1
+     {
+        text-align: center;
+     
+       
+    }
+}
+.backgroundButton {
+    color: aliceblue;
+}
+
 
 .contentText {
     display: flex;
@@ -282,4 +313,10 @@
 }.phoneLink {
     color: black;
     text-decoration: none;
+}
+
+@media (max-width: 400px) {
+    .bgText h2 {
+        font-size: 1.5rem;
+    }
 }
