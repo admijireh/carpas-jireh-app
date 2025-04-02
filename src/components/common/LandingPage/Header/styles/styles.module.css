@@ -145,7 +145,7 @@
 .backgroundButton {
     color: aliceblue;
 }
-.contactInfo .wraperContactInfo p {
+.contactInfo .wraperContactInfo h1 {
     font-size: 70px;
     width: 50%;
     display: flex;
@@ -153,6 +153,7 @@
     flex-direction: row;
     justify-content: flex-end;  /* Changed from 'end' */
     text-align: right;
+    color: aliceblue;
     
 }
 
@@ -185,6 +186,7 @@
     text-align: center;
 }
 
+
 .bgText p {
   color: aliceblue;
   font-size: 1.5rem;
@@ -196,7 +198,7 @@
         width: 50%;
       }
 
-      .contactInfo .wraperContactInfo p {
+      .contactInfo .wraperContactInfo h1 {
         font-size: 35px;
         
     }

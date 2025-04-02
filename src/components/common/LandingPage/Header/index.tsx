@@ -4,7 +4,6 @@ import styles from "./styles/styles.module.css";
 import { motion } from "motion/react";
 import { sliderStyles } from "@/app/motion-animations";
 import { useState, useEffect } from "react";
-
 import {
   FaChevronLeft,
   FaChevronRight,
@@ -13,7 +12,6 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { dmSans, dmSerif } from "@/fonts/index.fonts";
-
 const Header = () => {
   const images = [
     ["/assets/carpa1.png", "Bodas y Celebraciones"],
@@ -72,9 +70,9 @@ const Header = () => {
                   priority={true}
                 />
 
-                <p className={dmSerif.className}>
+                <h1 className={dmSerif.className}>
                   Carpas Para todo tipo de evento{" "}
-                </p>
+                </h1>
               </div>
             </div>
             <div className={styles.contentText}>
