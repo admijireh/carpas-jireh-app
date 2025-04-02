@@ -66,11 +66,10 @@ const Header = () => {
                 <Image
                   src={"/assets/Vector.png"}
                   alt="logo-carpas"
-                  loading="lazy"
                   quality={100}
                   width={150}
                   height={90}
-                  priority={false}
+                  priority={true}
                 />
 
                 <p className={dmSerif.className}>
@@ -100,13 +99,18 @@ const Header = () => {
             </div>
             <div className={styles.footerBgText}>
               <div className={styles.buttonCallAction}>
-                <a href="tel:+1234567890" className={styles.buttonWp}>
+                <a href="tel:+3171822748" className={styles.buttonWp}>
                   <FaPhone className={styles.icon} />
-                  <span className={styles.tooltip}>1234567890</span>
+                  <span className={styles.tooltip}>317 1822748</span>
                 </a>
-                <a href="mailto:info@ejemplo.com" className={styles.buttonWp}>
+                <a
+                  href="mailto:admicarpasjireh@gmail.com"
+                  className={styles.buttonWp}
+                >
                   <FaEnvelope className={styles.icon} />
-                  <span className={styles.tooltip}>info@ejemplo.com</span>
+                  <span className={styles.tooltip}>
+                    admicarpasjireh@gmail.com
+                  </span>
                 </a>
               </div>
             </div>
