@@ -89,6 +89,9 @@ const Header = () => {
                 {...sliderStyles}
                 className={styles.buttonWp}
                 onMouseEnter={handleHoverButton}
+                onClick={() =>
+                  (window.location.href = "https://wa.me/+523171822748")
+                }
               >
                 <FaWhatsapp className={styles.wpIcon} />
                 <span className={`${styles.backgroundButton}`}>
