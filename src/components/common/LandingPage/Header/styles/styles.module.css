@@ -151,7 +151,7 @@
     display: flex;
     letter-spacing: -4;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;  /* Changed from 'end' */
     text-align: right;
     
 }
@@ -277,8 +277,7 @@
         color: aliceblue;
         font-size: 1rem; 
     }
-}
-.phoneLink {
+}.phoneLink {
     color: black;
     text-decoration: none;
 }

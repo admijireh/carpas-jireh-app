@@ -4,7 +4,6 @@ import { NavBarContext, useNavBarContext } from "./context";
 import { INavBarProps } from "./interfaces";
 import { GiBarracksTent } from "react-icons/gi";
 import { TiThMenu } from "react-icons/ti";
-import { FaInfoCircle } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 
 import styles from "./styles/navbar.module.css";
@@ -12,6 +11,7 @@ import { RiHome2Fill } from "react-icons/ri";
 import { useState } from "react";
 import Link from "next/link";
 import { dmSans } from "@/fonts/index.fonts";
+import { FaPhone } from "react-icons/fa6";
 
 const NavBarCompound = ({ children, content }: INavBarProps) => {
   const [isOpen] = useState<boolean>(false);
@@ -59,7 +59,9 @@ NavBarCompound.ButtonAbout = function ButtonAbout() {
   return (
     <li>
       {" "}
-      <FaInfoCircle />{" "}
+      <a href="#contact">
+        <FaPhone />{" "}
+      </a>
     </li>
   );
 };

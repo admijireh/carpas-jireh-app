@@ -11,6 +11,7 @@ import LightGallery from "lightgallery/react";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+import SocialMedia from "@/components/common/LandingPage/Contact/childrens/SocialMedia";
 
 const categorias = [
   "todas",
@@ -101,22 +102,38 @@ FilterableTents.TentsGrid = function TentsGrid({}) {
 
   return (
     <div>
+      <div
+        style={{
+          position: "fixed",
+          zIndex: "9999",
+          bottom: "0",
+          backgroundColor: "rgba(255, 253, 253, 0.48)",
+          backdropFilter: "blur(10px)",
+          borderRadius: "10px",
+          marginBottom: "4rem",
+          padding: "1rem",
+        }}
+      >
+        <SocialMedia />
+      </div>
       {filteredTents.length > 0 ? (
-        <LightGallery
-          speed={500}
-          plugins={[]}
-          elementClassNames={styles.tentGrid}
-        >
-          {filteredTents.map((tent) => (
-            <div
-              key={tent.id}
-              data-src={tent.imgUrl}
-              className={styles.galleryItem}
-            >
-              <TentCard tent={tent} />
-            </div>
-          ))}
-        </LightGallery>
+        <div>
+          <LightGallery
+            speed={500}
+            plugins={[]}
+            elementClassNames={styles.tentGrid}
+          >
+            {filteredTents.map((tent) => (
+              <div
+                key={tent.id}
+                data-src={tent.imgUrl}
+                className={styles.galleryItem}
+              >
+                <TentCard tent={tent} />
+              </div>
+            ))}
+          </LightGallery>
+        </div>
       ) : (
         <div className={styles.noTentMessage}>
           <h2>No se encontró la carpa</h2>

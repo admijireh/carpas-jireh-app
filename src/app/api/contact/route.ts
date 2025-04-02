@@ -30,7 +30,7 @@ export async function POST(request: Request) {
         <p>Nuestro equipo se pondrá en contacto contigo pronto.</p>
         <p>Datos de tu solicitud:</p>
         <ul>
-          <li>Teléfono: ${telefono}</li>
+          <li>Teléfono: <a href="tel:${telefono}">${telefono}</a></li>
           <li>Tipo de Carpa: ${tipoCarpa}</li>
         </ul>
       `,
@@ -46,8 +46,10 @@ export async function POST(request: Request) {
         <p>Detalles del cliente:</p>
         <ul>
           <li>Nombre: ${nombre}</li>
-          <li>Email: ${email}</li>
-          <li>Teléfono: ${telefono}</li>
+          <li>Email: <a href="mailto:${email}">${email}</a> (${email})</li>
+          <li>Teléfono: <a href="tel:${telefono}">${telefono}</a> | <a href="https://wa.me/${telefono
+        .toString()
+        .replace(/\D/g, "")}" target="_blank">WhatsApp</a> (${telefono})</li>
           <li>Tipo de Carpa: ${tipoCarpa}</li>
           <li>Aceptó tratamiento de datos: ${dataConsent ? "Sí" : "No"}</li>
         </ul>

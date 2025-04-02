@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Tent } from "../../types";
 import styles from "../../styles/styles.module.css";
 import { motion } from "motion/react";
-import SocialMedia from "@/components/common/LandingPage/Contact/childrens/SocialMedia";
 
 export default function TentCard({ tent }: { tent: Tent }) {
   return (
@@ -33,17 +32,14 @@ export default function TentCard({ tent }: { tent: Tent }) {
             src={tent.imgUrl}
             loading="lazy"
             alt={`imagen de ${tent.categoria}`}
-            width={500}
-            height={100}
-            style={{ width: "60%", height: "auto", margin: "0 auto" }}
+            fill
+            style={{
+              margin: "0 auto",
+              objectFit: "cover",
+            }}
             priority={false}
-            layout="responsive"
           />
         </div>
-        <section className={styles.contentSocialMedia}>
-          {" "}
-          <SocialMedia />
-        </section>
       </div>
     </motion.div>
   );

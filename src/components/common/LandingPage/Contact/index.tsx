@@ -85,7 +85,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={styles.contactContainer}>
+    <div id="contact" className={styles.contactContainer}>
       <section className={styles.formText}>
         <div className={styles.contentTextForm}>
           <h4 className={dmSerif.className}>

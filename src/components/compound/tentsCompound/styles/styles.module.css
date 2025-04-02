@@ -9,11 +9,14 @@
     gap: 1rem;
     grid-auto-rows: 30rem;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem),1fr));
-    padding-top: 4rem;
     
 }
 
 @media (max-width:800px) {
+    .tentGrid {
+        grid-auto-rows: 23rem;
+
+    }
     .tentGrid {
         gap: 5rem;
     }
@@ -31,7 +34,7 @@
     cursor: pointer;
     padding: 1.5rem;
     justify-content: space-around;
-    height: fit-content;
+    height: 25rem;
     transition: all ease .2s;
     
 }
@@ -94,6 +97,7 @@ scale: 1.1;
 .imageContainer {
     display: flex;
     height: 100%;
+    position: relative;
 }
 
 /* Form Search Tecnology */
@@ -191,6 +195,12 @@ scale: 1.1;
     position: relative;
     z-index: 1;
     
+}
+
+@media (max-width:800px) {
+    .contentLogo {
+        display: none;
+    }
 }
 
 .contentGrid {
