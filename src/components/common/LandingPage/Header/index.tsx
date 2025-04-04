@@ -77,7 +77,7 @@ const Header = () => {
             </div>
             <div className={styles.contentText}>
               {" "}
-              <motion.h2 className={dmSerif.className} {...sliderStyles}>
+              <motion.h2 className={dmSerif.className}>
                 {images[currentImageIndex][1]}
               </motion.h2>
               <motion.p className={dmSans.className} {...sliderStyles}>
@@ -118,12 +118,11 @@ const Header = () => {
           </motion.div>
           <Image
             src={images[currentImageIndex][0]}
-            loading="lazy"
             alt="Carpa en la naturaleza"
             fill
             quality={100}
             style={{ objectFit: "cover" }}
-            priority={false}
+            priority={true}
           />
         </motion.div>
         <button onClick={prevImage} className={styles.carouselButton}>
