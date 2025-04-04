@@ -100,7 +100,7 @@ const Header = () => {
             </div>
             <div className={styles.footerBgText}>
               <div className={styles.buttonCallAction}>
-                <a href="tel:+3171822748" className={styles.buttonWp}>
+                <a href="tel:3171822748" className={styles.buttonWp}>
                   <FaPhone className={styles.icon} />
                   <span className={styles.tooltip}>317 1822748</span>
                 </a>
