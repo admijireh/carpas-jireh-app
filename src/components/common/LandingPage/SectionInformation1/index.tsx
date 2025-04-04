@@ -18,7 +18,10 @@ const SectionOne = () => {
                 tenemos la solución perfecta para ti.
               </p>
               <button className={`${styles.callToAction} ${dmSans.className}`}>
-                ¡Reserva Ahora! <BiArrowFromLeft />
+                <a style={{ color: "white" }} href="tel:3171822748">
+                  ¡Reserva Ahora!
+                </a>
+                <BiArrowFromLeft />
               </button>
             </div>
           </div>
