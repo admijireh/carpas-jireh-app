@@ -5,7 +5,7 @@ const SocialMedia = ({ isWhite = false }: { isWhite?: boolean }) => {
   return (
     <div className={`${styles.socialMedia}`}>
       <a
-        href="tel:+573171822748"
+        href="tel:+573026456892"
         target="_blank"
         rel="noopener noreferrer"
         style={{ position: "relative", zIndex: 10 }}
