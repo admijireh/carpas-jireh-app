@@ -20,7 +20,7 @@ const galleryItems = [
     title: "Tipo Pagoda",
     description:
       "Se usan en eventos, ferias, bodas y recepciones al aire libre.",
-    image: "/assets/gallery7.jpeg",
+    image: "/assets/gallery7.webp",
   },
   {
     title: "Tipo Membrana",

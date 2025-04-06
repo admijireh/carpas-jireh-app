@@ -2,13 +2,6 @@ import { Tent } from "@/components/compound/tentsCompound/types";
 
 export const tents: Tent[] = [
   {
-    id: 1,
-    imgUrl: "/cuadradas/cuatro-aguas/cuatro-aguas1.webp",
-    categoria: "carpas cuatro aguas",
-    descripcion:
-      "Carpa tradicional con diseño a dos aguas, ideal para eventos y celebraciones",
-  },
-  {
     id: 2,
     imgUrl: "/cuadradas/cuatro-aguas/cuatro-aguas2.webp",
     categoria: "carpas cuatro aguas",
@@ -35,13 +28,7 @@ export const tents: Tent[] = [
     categoria: "carpas cuatro aguas",
     descripcion: "Carpa premium de cuatro aguas con acabados de alta calidad",
   },
-  {
-    id: 6,
-    imgUrl: "/cuadradas/cuatro-aguas/cuatro-aguas6.webp",
-    categoria: "carpas cuatro aguas",
-    descripcion:
-      "Carpa robusta de cuatro aguas ideal para eventos de gran escala",
-  },
+
   {
     id: 7,
     imgUrl: "/cuadradas/cuatro-aguas/cuatro-aguas7.webp",
@@ -129,13 +116,7 @@ export const tents: Tent[] = [
     categoria: "carpas hangares",
     descripcion: "Hangar espacioso ideal para almacenamiento industrial",
   },
-  {
-    id: 20,
-    imgUrl: "/cuadradas/hangares/hangar2.webp",
-    categoria: "carpas hangares",
-    descripcion:
-      "Hangar resistente con estructura reforzada para uso comercial",
-  },
+
   {
     id: 21,
     imgUrl: "/cuadradas/hangares/hangar3.webp",
