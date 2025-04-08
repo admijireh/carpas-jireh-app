@@ -35,6 +35,12 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'AW-16976475416');
+              gtag('event', 'conversion', {
+                'send_to': 'AW-16976475416/sn4qCL2IlbQaEJjqgZ8_',
+                'value': 1.0,
+                'currency': 'COP',
+                'transaction_id': ''
+              });
             `,
           }}
         />
