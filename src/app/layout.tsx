@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import "./styles/globals.css";
-import "./styles/reset.css";
-import "./styles/normalize.css";
 import Script from "next/script";
 
 export const metadata: Metadata = {
